@@ -83,12 +83,12 @@ StudentRoll::StudentRoll(const StudentRoll &orig) {
 StudentRoll::~StudentRoll() {
   Node *nex;
   for(Node *p=head;p!=0;p=nex){
-    nex=p->next
+    nex=p->next;
     delete p->s;
     delete p;
   }
   head=NULL;
-  tail=NULL:
+  tail=NULL;
 }
 
 StudentRoll & StudentRoll::operator =(const StudentRoll &right ) {
